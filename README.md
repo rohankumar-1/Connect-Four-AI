@@ -1,5 +1,7 @@
 # Connect Four with "Artificial Intelligence"
+Rohan Kumar
 
+Connect Four is an traditional board game in which two alternating players choose columns to drop colored circles in a 5x6 grid. A column is full with 5 pieces, and a player wins when there are 4 of his/her colored pieces in a row diagonally, vertically, or horizontally. This project is an upgrade to that traditional game by introducting lookahead AI, which has the capability of predicting a certain number of moves in advance which column is best to pick. This is possible due to recursive backtracking and a specific algorithm developed on below. Although the lookahead number is technically capped at 30 moves, above 7-8 moves the runtime for this project is very long, due to the amount of recursion necessary for the AI to process.
 
 ## How to Run
 
@@ -21,6 +23,10 @@ There are 3 main parts to this projects, in which problem-solving was paramount:
     
     2. To implement the AI capable of looking ahead a certain number of moves, the basic approach is this: for some given lookahead number N, create another AI opponenet with lookahead N-1, and then play that AI recursively until the original AI finds the best possible move, predicting N moves ahead of it. For example, an AI with lookahead 1 will play an AI with lookahead 0 (random), and for each move, it will check every column using recursive backtracking to find any possible way to win. The way that the AI knows which column to choose is from scoring the columns according to win percentage. For example, a column that will certainly lead to victory is 100, and a column that will certainly lead to defeat is 0. A random AI starts will all columns at 50. In the case of multiple columns with the same score, the AI chooses randomly. However, as the AI adds moves, this becomes less and less up to randomness.
     
-3. **Graphics**: 
+3. **Graphics**: to implement the GUI, the package *pygame* was used, which is a package designed to run small applets off of python code. The main pieces were the `pygame.init()` call, which starts the game, and then the various drawing mechanisms, such as `pygame.draw.circle(screen, Color(0, 0, 0), (i, 450), 45, width=0)`.
 
-## What I learnt
+
+## What I Learnt
+
+First and foremost, this project was about developing stronger intuition and control in python. I explored subjects like recursive backtracking, loops, and polymorphism. In addition to this, I learnt a lot about package management with conda and pip regarding the pygame package, and about setting up python environments on a computer. The main takeaways has been a stronger knowledge of algorithms, file management, package management, command prompt usage, and applet graphics.
+
