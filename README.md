@@ -5,7 +5,7 @@ Connect Four is an traditional board game in which two alternating players choos
 
 ## How to Run
 
-The top files are ConnectFourGame.py or ConnectFourGUI.py. The first one will implement a Connect Four game in the terminal. This game is customizable, the user can choose between a second human player, a computer with random-generated moves, or a computer with AI and a specificied number of lookahead moves. The second one uses **pygame** to create an applet where a user plays against an AI with an input number of lookahead moves that is displayed nicely on a traditional Connect Four game board.
+The top files are [ConnectFourGame.py](ConnectFourGame.py) or [[ConnectFourGame.py](ConnectFourGUI.py). The first one will implement a Connect Four game in the terminal. This game is customizable, the user can choose between a second human player, a computer with random-generated moves, or a computer with AI and a specificied number of lookahead moves. The second one uses **pygame** to create an applet where a user plays against an AI with an input number of lookahead moves that is displayed nicely on a traditional Connect Four game board.
 
 To download **pygame**, first install pip, and then in the python environment, run
 `pip install pygame`.
